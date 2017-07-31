@@ -1,6 +1,6 @@
 # owlist
 
-> Owl list - An amazing todo app
+> Owl list - An amazing to-do app
 
 ## Build Setup
 

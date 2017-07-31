@@ -2,7 +2,7 @@
     <b-navbar toggleable type="inverse" variant="success">
         <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
-        <b-link class="navbar-brand" to="#">
+        <b-link class="navbar-brand" to="/">
             <span>Owlist</span>
         </b-link>
 
@@ -15,8 +15,8 @@
                         <span style="font-weight: bold;">Max</span>
                     </template>
 
-                    <b-dropdown-item to="#">Profile</b-dropdown-item>
-                    <b-dropdown-item to="#">Signout</b-dropdown-item>
+                    <b-dropdown-item to="/settings">Profile</b-dropdown-item>
+                    <b-dropdown-item to="/logout">Signout</b-dropdown-item>
                 </b-nav-item-dropdown>
 
             </b-nav>

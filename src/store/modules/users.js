@@ -1,7 +1,5 @@
 const getters = {
-    isAuthenticated(state) {
-        return state.user;
-    }
+
 };
 
 const actions = {
@@ -18,9 +16,6 @@ const mutations = {
 
 
 export default {
-    state: {
-        user: {name: 'tu'},
-    },
     getters,
     mutations,
     actions,

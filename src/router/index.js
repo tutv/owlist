@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import TodoList from '../components/TodoList.vue';
-import Settings from '../components/Settings.vue';
-import Login from '../components/Login.vue';
+import TodoList from '../components/todos/TodoList.vue';
+import Settings from '../components/settings/Settings.vue';
+import Login from '../components/pages/Login.vue';
 
 Vue.use(Router);
 
@@ -12,19 +12,24 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'Home',
+            name: 'home',
             component: TodoList
         },
         {
             path: '/login',
-            name: 'Login',
+            name: 'login',
             component: Login
         },
         {
             path: '/settings',
-            name: 'Settings',
+            name: 'settings',
             component: Settings
+        },
+        {
+            path: '*',
+            redirect: {
+                name: 'home'
+            }
         }
-
     ]
 })

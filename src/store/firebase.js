@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueFire from 'vuefire';
 import firebase from 'firebase';
 
+Vue.use(VueFire);
+
 const config = {
     apiKey: "AIzaSyBZ74JGc3Aog3hSKdxxHdGNVZApSdPgfbw",
     authDomain: "owlist-a810e.firebaseapp.com",
@@ -10,5 +12,7 @@ const config = {
     storageBucket: "owlist-a810e.appspot.com",
     messagingSenderId: "1000788664359"
 };
-firebase.initializeApp(config);
-Vue.use(VueFire);
+
+const app = firebase.initializeApp(config);
+
+export default app;

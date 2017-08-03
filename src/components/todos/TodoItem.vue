@@ -2,14 +2,16 @@
     <div class="todo-item" :class="{done: isDone}">
         <input type="checkbox" class="checkbox" :checked="isDone" @change="onCheck">
         <span class="title">{{todo.title}}</span>
-        <span class="remove" @click="remove">Remove</span>
+        <span class="remove" @click="remove">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </span>
     </div>
 </template>
 
 <style scoped>
     .remove {
         cursor: pointer;
-        color: red;
+        color: #f44336;
     }
 </style>
 

@@ -5,8 +5,6 @@
         <template v-for="todo in todos">
             <todo-item :todo="todo"></todo-item>
         </template>
-
-        <button class="btn" @click="login">Login</button>
     </div>
 </template>
 
@@ -21,9 +19,6 @@
             TodoItem
         },
         methods: {
-            login: function (e) {
-                console.log(e);
-            }
         },
         created: function () {
             this.$store.dispatch('fetchTodoList');

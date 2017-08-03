@@ -10,7 +10,7 @@
 
 <script>
     import TodoItem from './TodoItem.vue';
-    import AddTodo from "./add-todo.vue";
+    import AddTodo from "./AddTodo.vue";
 
     export default {
         name: 'todo-lists',
